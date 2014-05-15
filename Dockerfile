@@ -1,9 +1,9 @@
-FROM ubuntu
+FROM ubuntu:trusty
 
 MAINTAINER Jonathan Miller <jonathan.michael.miller@gmail.com>
 
 RUN apt-get update && \
-    apt-get install -y redis-server
+    apt-get install -y redis-server=2:2.8.4-2
 
 VOLUME [ "/data" ]
 
